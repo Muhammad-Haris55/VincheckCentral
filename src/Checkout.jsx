@@ -27,14 +27,17 @@ function Loginform() {
 
                     <div className="title">
 
-                        <NavLink className="nav-link" to='/'><p style={{color:'white'}}>Vincheck Central</p></NavLink>
+                        <NavLink className="nav-link" to='/'><p style={{ color: 'white' }}>Vincheck Central</p></NavLink>
 
                     </div>
-                    <div className="log">
-                        <p style={{color:'white'}}>Login</p>
+                    <NavLink to='/Login' className='nav-link'>
 
-                        {/* <NavLink className="nav-link" to='/'><p></p></NavLink> */}
-                    </div>
+                        <div className="log">
+                            <p style={{ color: 'white' }}>Login</p>
+
+                            {/* <NavLink className="nav-link" to='/'><p></p></NavLink> */}
+                        </div>
+                    </NavLink>
                 </div>
                 <div className='nborder'></div>
 
@@ -51,7 +54,7 @@ function Loginform() {
                                 </div>
                                 <div className="ftitle">
                                     <p className='frs'>Category</p>
-                                    <p  className='fls'>eg diamond</p>
+                                    <p className='fls'>eg diamond</p>
                                 </div>
                                 <div className="ftitle">
                                     <p className='frs'>Total Reports</p>
@@ -73,11 +76,11 @@ function Loginform() {
 
                             <div className="lbtn2">
 
-                            <button type="button" class="btn btn-primary " data-mdb-ripple-init id='loginbtn'>Sign in</button>
-                            
-                            <button type="button" class="btn btn-primary " data-mdb-ripple-init id='loginbtn'>Sign in</button>
-                            
-                            <button type="button" class="btn btn-primary " data-mdb-ripple-init id='loginbtn'>Sign in</button>
+                                <button type="button" class="btn btn-primary " data-mdb-ripple-init id='loginbtn'>Sign in</button>
+
+                                <button type="button" class="btn btn-primary " data-mdb-ripple-init id='loginbtn'>Sign in</button>
+
+                                <button type="button" class="btn btn-primary " data-mdb-ripple-init id='loginbtn'>Sign in</button>
                             </div>
                         </form>
 

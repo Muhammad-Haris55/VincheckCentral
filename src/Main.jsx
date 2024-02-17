@@ -19,7 +19,7 @@ function Main() {
         <>
             <Navbar />
             <div className="hero col-xxl-12 col-md-12 col-sm-12 mx-auto">
-                <div className="wrapper col-xxl-11 col-xl-12 col-sm-10 mx-auto">
+                <div className="wrapper col-xxl-11 col-xl-11 col-sm-10 mx-auto">
                     <div className="col-xxl-6 col-xl-7 col-lg-7 col-md-10 col-sm-5 col1">
                         <img id='carimg' src="c5r.png" alt="" srcset="" />
                         <span className="phone">

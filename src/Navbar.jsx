@@ -16,49 +16,6 @@ function Navbar() {
     }
     return (
         <>
-            {/* <nav className="navbar navbar-expand-lg " id='navs'>
-                <div className="col-md-10 mx-auto container">
-                    <NavLink className="navbar-brand" id="brandname" to="/"  data-aos-anchor="#example-anchor"
-                        data-aos-offset="500"
-                        data-aos-duration="500"
-                        data-aos-delay="500">Vincheck Central</NavLink>
-                    <label className="burger" htmlFor="burger"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent"
-                        aria-controls="navbarSupportedContent"
-                        aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <input type="checkbox" id="burger"></input>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </label>
-                    <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul className="navbar-nav mb-2 mb-lg-0"  data-aos-anchor="#example-anchor"
-                            data-aos-offset="500"
-                            data-aos-duration="500"
-                            data-aos-delay="500">
-                            <li className="nav-item">
-                                <NavLink className="nav-link" id="home" to="/" >Home</NavLink>
-                            </li>
-                            <li className="nav-item">
-                                <NavLink className="nav-link" id="home1" to="" >Sample report</NavLink>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href='#pricing' id="home2" to="pricing" >Prices</a>
-                            </li>
-                            <li className="nav-item">
-                                <NavLink className="nav-link" id="home3" to="Login" >Customer Login</NavLink>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav> */}
-            {/* <a class="btn btn-primary"  data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
-                Link with href
-            </a>
-            */}
             {/* Lap navbar */}
             <div className="navhead container">
                 <span className="items col-md-11 mx-auto container" >
@@ -102,7 +59,7 @@ function Navbar() {
                 </span>
 
             </div>
-            {/* Phone bars */}
+            {/* Phone navbar */}
             <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
             <div class="offcanvas-header">
                     <h5 class="offcanvas-title" id="offcanvasExampleLabel">VINCHECK CENTRAL</h5>
@@ -116,11 +73,11 @@ function Navbar() {
                                     <img src="house.png" alt="" /> Home
                                 </li>
                             </a>
-                            <NavLink className='nav-link' to='/Sample'>
+                            <a className='nav-link' href='/Sample'>
                                 <li id='li'>
                                     <img src="rep.png" alt="" /> Sample report
                                 </li>
-                            </NavLink>
+                            </a>
                             <a className='nav-link' href="#pricing" >
                                 <li id='li'>
                                     <img src="p.png" alt="" /> Prices

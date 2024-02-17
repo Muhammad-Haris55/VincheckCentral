@@ -36,7 +36,7 @@ function Loginform() {
                             <div className="reqbox ">
                                 <div class="row ">
 
-                                    <div className="pt-3" style={{ display: 'flex', justifyContent: 'center' }}>
+                                    <div className="pt-2 pb-1" style={{ display: 'flex', justifyContent: 'center' }}>
                                         <div class="col">
                                             <div data-mdb-input-init class="form-outline">
                                                 <label class="form-label" for="form3Example1" id='reqlabel'>Name</label>

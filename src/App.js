@@ -5,6 +5,8 @@ import Loginform from "./Loginform";
 import Dashboard from "./Dashboard";
 import Dpage1 from "./Dpage1";
 import Profile from './Profile'
+import Signup from "./Signup";
+import Signupform from "./Signupform";
 import Checkout from "./Checkout";
 
 function App() {
@@ -13,8 +15,9 @@ function App() {
       {/* <Main/> */}
       <Routes>
 
-        {/* <Route path="/" element={<Main />}></Route> */}
         <Route path="/" element={<Main />}></Route>
+        <Route path="/Signupform" element={<Signupform />}></Route>
+        <Route path="/Signup" element={<Signup />}></Route>
         <Route path="/Check" element={<Checkout />}></Route>
         <Route path="/Login" element={<Loginform />}></Route>
         <Route path="Dashboard" element={<Dpage1/>}></Route>

@@ -4,7 +4,7 @@ function Form() {
     return (
         <>
             <div className="col-xxl-6 col-xl-5 col-lg-6 col-md-7 col-sm-8 mx-auto col2">
-                <div className="col-md-11 col-sm-11 mx-auto wform">
+                <div className="col-md-11 col-sm-11 mx-auto wform pb-4">
                     <h3 className='text-center'>Full Vehicle History Report</h3>
                     <h5 className='text-center'>Find any vehicle by VIN</h5>
                     <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter VIN to Search"></input>

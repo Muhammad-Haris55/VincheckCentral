@@ -393,12 +393,14 @@ ul li {
     font-weight: 600;
 }
 
+
 .phone img {
     filter: drop-shadow(5px 5px 5px black);
     /* object-fit: cover; */
     width: 150%;
     height: 110%;
 }
+
 
 .col1 {
     display: flex;
@@ -1582,7 +1584,7 @@ span {
     /* border: 1px solid black; */
     font-family: var(--navbarfont);
 
-    
+
     background: rgb(40, 167, 46);
     background: linear-gradient(270deg, rgba(40, 167, 46, 1) 29%, rgb(130, 212, 111) 77%);
 }
@@ -1666,7 +1668,7 @@ span {
     /* border: 1px solid black; */
     /* border: 1px solid black; */
     /* height: max-content; */
-    
+
     width: 350px;
     /* width: max-content; */
     padding: 35px 30px 35px 30px;
@@ -1791,7 +1793,8 @@ form h3 {
 
     /* justify-content: center; */
 }
-.form-outline{ 
+
+.form-outline {
     /* border: 1px solid #000!important; */
 }
 
@@ -1811,7 +1814,7 @@ form h3 {
     border-radius: 0.215rem;
     box-shadow: none;
     transition: all 0.2s ease-in-out;
-    box-shadow: none!important;
+    box-shadow: none !important;
 }
 
 .form-control:focus {
@@ -2167,13 +2170,13 @@ body.open .sidebar {
 
 #form3Example1 {
     width: 22vw;
-    box-shadow: none!important;
-    padding: 4px!important;
-    
+    box-shadow: none !important;
+    padding: 4px !important;
+
 }
 
 #form3Example {
-    padding: 4px!important;
+    padding: 4px !important;
     width: 24vw;
 }
 
@@ -2328,9 +2331,56 @@ body.open .sidebar {
 }
 
 /*  */
-textarea.form-control{
-  box-shadow: none!important;  
+textarea.form-control {
+    box-shadow: none !important;
 }
+
+
+/* Sign up form */
+.sform,
+.stable {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    padding: 5px;
+}
+
+.sform {
+    padding: 20px;
+}
+
+#stable {
+    height: 10vh;
+}
+
+.stable img {
+    width: 160px;
+    height: 150px;
+    border: 1px solid black;
+    margin-bottom: 5px;
+}
+
+.stable h3,
+.sform h2,
+.sform h3 {
+    font-family: var(--navbarfont);
+}
+
+#stable th,
+#stable td {
+    font-family: var(--navbarfont) !important;
+    font-size: 20px;
+}
+
+.sign {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+/*  */
 /* Media queries */
 
 
@@ -2433,7 +2483,7 @@ textarea.form-control{
         width: 300px;
         position: relative;
         z-index: 1;
-        right: 45px;
+        right: 27px;
         bottom: 10px;
         /* left: 25px; */
     }
@@ -2478,6 +2528,29 @@ textarea.form-control{
 }
 
 @media(max-width:700px) {
+
+    /* Signup form queries */
+    .sign {
+        display: flex;
+        height: max-content;
+        flex-direction: column;
+    }
+
+    .sform,
+    .stable {
+        width: 100%;
+    }
+
+
+    #stable th,
+    #stable td {
+        font-family: var(--navbarfont) !important;
+        font-size: 15px;
+    }
+
+
+
+    /*  */
     .col1 {
         width: 60% !important;
         left: 0px !important;
@@ -2505,7 +2578,7 @@ textarea.form-control{
         /* position: static; */
         /* width: 100%; */
         position: relative;
-        left: 0px !important;
+        left: 30px !important;
     }
 
     .wform {
@@ -2525,7 +2598,6 @@ textarea.form-control{
 
     .wform,
     .col2 {
-        /* padding: 0px!important; */
         width: 92% !important;
         height: 40vh;
     }
@@ -2554,8 +2626,8 @@ textarea.form-control{
     .phone img {
         position: relative;
         /* bottom: 55px!important; */
-        left: 30px !important;
-        /* top: 25px !important; */
+        left: 37px !important;
+        top: 33px !important;
         /* left: 0px!important; */
 
     }
@@ -3639,7 +3711,7 @@ textarea.form-control{
 
     .mainre2 {
         height: min-content !important;
-       
+
     }
 
 }
@@ -3707,36 +3779,41 @@ textarea.form-control{
 }
 
 @media(max-width:576px) {
-    
+
     .mainre2 {
         height: min-content !important;
-        width: 100%!important;
+        width: 100% !important;
     }
-    .formbox,.formbox2 {
+
+    .formbox,
+    .formbox2 {
 
         width: 80%;
         height: min-content;
         padding-bottom: 25px;
-    
+
 
 
     }
-    .formbox2{
-        margin-top: 20px!important;
+
+    .formbox2 {
+        margin-top: 20px !important;
     }
 
     #form1Example2 {
         width: 62vw;
     }
-    #form3Example1{
-        width: 10vw!important;
+
+    #form3Example1 {
+        width: 10vw !important;
     }
+
     #form3Example {
         width: 36vw;
     }
 
     .reqbox {
-        width: 95%!important;
+        width: 95% !important;
         /* white-space: nowrap; */
         height: min-content;
         padding-bottom: 20px;
@@ -3745,9 +3822,12 @@ textarea.form-control{
 }
 
 @media(max-width:510px) {
-    .title a,.log p{
+
+    .title a,
+    .log p {
         font-size: 1.35rem;
     }
+
     .dform1 {
         width: 80% !important;
     }

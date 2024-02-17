@@ -9,7 +9,7 @@ import {
     MDBBtn
 } from 'mdb-react-ui-kit';
 
-function Loginform() {
+function Signupform() {
     return (
         <>
             <div className=" login">
@@ -20,13 +20,13 @@ function Loginform() {
                         <NavLink className="nav-link" to='/' style={{ color: 'white' }}><p>Vincheck Central</p></NavLink>
 
                     </div>
-                    <NavLink className='nav-link'to='/Signupform'>
+                    <NavLink className='nav-link' to='/Login'>
 
-                    <div className="log">
-                        <p style={{ color: 'white' }}>Sign up</p>
+                        <div className="log">
+                            <p style={{ color: 'white' }}>Login</p>
 
-                        {/* <NavLink className="nav-link" to='/'><p></p></NavLink> */}
-                    </div>
+                            {/* <NavLink className="nav-link" to='/'><p></p></NavLink> */}
+                        </div>
                     </NavLink>
                 </div>
                 <div className='nborder'></div>
@@ -34,8 +34,12 @@ function Loginform() {
                 <div className="logform">
                     <div className="formbox ">
                         <form >
-                            <h3 className='pb-3' >Login Form</h3>
+                            <h3 className='pb-1' >Signup Form</h3>
+                            <p>Name</p>
+                            <MDBInput className='mb-3' type='email' id='form1Example2' />
                             <p>Email Adress</p>
+                            <MDBInput className='mb-3' type='email' id='form1Example2' />
+                            <p>Phone no</p>
                             <MDBInput className='mb-3' type='email' id='form1Example2' />
                             <p>Password</p>
                             <MDBInput className='mb-3' type='password' id='form1Example2' />
@@ -45,12 +49,11 @@ function Loginform() {
                                     <MDBCheckbox id='cursor' label='Remember me' defaultChecked />
                                 </MDBCol>
                             </MDBRow>
-                                <div className="lbtn">
+                            <div className="lbtn">
+                                <button type="button" class="btn btn-primary " data-mdb-ripple-init id='loginbtn'>Sign in</button>
+                                {/* <button className='btnprimary'>Sign in </button> */}
 
-                                    <button type="button" class="btn btn-primary " data-mdb-ripple-init id='loginbtn'>Sign in</button>
-                                    {/* <button className='btnprimary'>Sign in </button> */}
-
-                                </div>
+                            </div>
                         </form>
 
                     </div>
@@ -61,4 +64,4 @@ function Loginform() {
     )
 }
 
-export default Loginform
+export default Signupform
