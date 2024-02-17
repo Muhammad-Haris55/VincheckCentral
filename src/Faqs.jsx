@@ -1,10 +1,14 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import Aos from 'aos'
 
 function Faqs() {
+    useEffect(()=>{
+        Aos.init()
+    },[])
     return (
         <>
             <div class="accordion">
-                <h1 data-aos="flip-left">Frequently Asked Questions</h1>
+                <h1 data-aos='flip-left'>Frequently Asked Questions</h1>
                 <div class="accordion-item">
                     <input type="checkbox" id="accordion1"></input>
                     <label for="accordion1" class="accordion-item-title"><span class="icon"></span>What is a Vehicle History Report?</label>

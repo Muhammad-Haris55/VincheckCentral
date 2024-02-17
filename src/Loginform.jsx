@@ -17,11 +17,11 @@ function Loginform() {
 
                     <div className="title">
 
-                        <NavLink className="nav-link" to='/'><p>Vincheck Central</p></NavLink>
+                        <NavLink className="nav-link" to='/' style={{color:'white'}}><p>Vincheck Central</p></NavLink>
 
                     </div>
                     <div className="log">
-                        <p>Login</p>
+                        <p style={{color:'white'}}>Sign up</p>
 
                         {/* <NavLink className="nav-link" to='/'><p></p></NavLink> */}
                     </div>
@@ -29,27 +29,23 @@ function Loginform() {
                 <div className='nborder'></div>
 
                 <div className="logform">
-                    <div className="formbox">
-                        <form>
-                            <h1 className='pb-3'>Login Form</h1>
+                    <div className="formbox ">
+                        <form >
+                            <h3 className='pb-3' >Login Form</h3>
                             <p>Email Adress</p>
-                            <MDBInput className='mb-3' type='email' id='form1Example1' />
+                            <MDBInput className='mb-3' type='email' id='form1Example2' />
                             <p>Password</p>
                             <MDBInput className='mb-3' type='password' id='form1Example2' />
 
                             <MDBRow className='mb-4'>
-                                <MDBCol className='d-flex justify-content-center'>
+                                <MDBCol className=''>
                                     <MDBCheckbox id='cursor' label='Remember me' defaultChecked />
-                                </MDBCol>
-                                <MDBCol>
-                                    <a href='#!'>Forgot password?</a>
                                 </MDBCol>
                             </MDBRow>
                             <div className="lbtn">
-
-                                <MDBBtn type='submit' id='loginbtn' block>
-                                    Sign in
-                                </MDBBtn>
+                            <button type="button" class="btn btn-primary " data-mdb-ripple-init id='loginbtn'>Sign in</button>
+                                {/* <button className='btnprimary'>Sign in </button> */}
+                                
                             </div>
                         </form>
 

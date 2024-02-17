@@ -3,18 +3,22 @@ import React from 'react'
 function Details() {
     return (
         <>
-            <div className="col-md-10 mx-auto details">
-                    <div className="detailtext" data-aos="fade-right"
+            <div className="col-xxl-10 col-xl-10 col-lg-10 col-md-10 col-sm-10 mx-auto details">
+            {/* data-aos="fade-right" */}
+                    <div className="detailtext"
                      data-aos-offset="10"
+                     data-aos="fade-right" 
                             >
                         <h2>Vital information to consider before buying</h2>
                         <h5>Vehicle history report will reveal</h5>
                     </div>
-                    <div className="col-md-10 mx-auto details2">
-                        <div className="col-md-5 cola " data-aos="fade-up" data-aos-offset="10">
+                    <div className="col-xxl-10 col-xl-12 col-lg-12 col-md-12 col-sm-10 mx-auto details2">
+                        <div className="col-xxl-5 col-xl-6 col-lg-6 col-md-6 col-sm-5 mx-auto cola" data-aos-offset="10"
+                        data-aos="fade-up" 
+                        >
                             <img src="topcar.png" alt="" />
                         </div>
-                        <div className="col-md-6 colb">
+                        <div className="col-xxl-6 col-xl-6 col-lg-7 col-md-7 col-sm-6 mx-auto colb">
                             <div className="mainbox">
                                 <div className="row1">
                                     <div class="tooltip-container">
@@ -69,7 +73,7 @@ function Details() {
                                                 </span>
 
 
-                                                <p>Accidents record</p>
+                                                <p className='acc'>Accidents record</p>
                                             </div>
                                         </div>
                                     </div>

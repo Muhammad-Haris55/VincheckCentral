@@ -8,13 +8,13 @@ import "slick-carousel/slick/slick-theme.css";
 export default class Resizable extends Component {
     state = {
         display: true,
-        // width: 900
+        width: 1200
     };
     render() {
         const settings = {
             dots: true,
             infinite: true,
-            speed: 650,
+            speed: 500,
             slidesToShow: 3,
             slidesToScroll: 1
 
@@ -24,11 +24,8 @@ export default class Resizable extends Component {
                 {/* <h2> Resizable Collapsible </h2> */}
                 <div className="alignment">
 
-                    <div className="col-md-10 mx-auto cards-container"
-                        style={{
-                            // width: this.state.width + "px",
-                            // display: this.state.display ? "block" : "none"
-                        }}
+                    <div className="col-md-10 col-sm-5 mx-auto cards-container"
+                        
                     >
                         <Slider {...settings}>
                             <div className="card1">

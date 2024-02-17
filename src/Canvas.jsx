@@ -1,28 +1,20 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom'
 
-
-function Sidebar() {
-    // 
-
-    // 
+function Canvas() {
     return (
         <>
-            <div className="dcol1 col-xxl-2 col-xl-2 col-1g-2 col-md-2 ">
 
-                <nav class="sidebar " id="side">
-
-                    <div className="sidebar-inner">
-                        <header class="sidebar-header">
-
-                        </header>
-
+            <div className="can">
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                    <div class="offcanvas-header ">
+                        <h5 class="offcanvas-title" id="offcanvasExampleLabel">MENU</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div className='content'>
                             <nav class="sidebar-menu">
-                                <span style={{ fontSize: "19px" }} id="cname">
-                                    {/* {ctx.username} */}
-                                    Hassan
-                                </span>
-                                <hr />
+
                                 {/* </button> */}
                                 <p
                                     style={{ fontSize: "15px", paddingTop: "", marginLeft: "10px" }}
@@ -63,18 +55,20 @@ function Sidebar() {
                                 </button>
                                 <button type="button" id="sbutton" >
                                     <img src="signout.png" />
-                                    
-                                    <NavLink className="nav-link" to="/">
-                                        <span id="spam" >Sign Out</span>
+
+                                    <NavLink className="nav-link" to="/Profile">
+                                        <span id="spam">Sign Out</span>
                                     </NavLink>
                                 </button>
                             </nav>
-                    </div>
-                </nav>
-            </div>
 
+                        </div>
+                    </div>
+                </div>
+            </div>
 
         </>
     )
 }
-export default Sidebar
+
+export default Canvas

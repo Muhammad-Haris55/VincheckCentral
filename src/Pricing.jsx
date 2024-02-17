@@ -3,17 +3,17 @@ import React from 'react'
 function Pricing() {
     return (
         <>
-            <body class="mx-auto" >
+            <body class="mx-auto" id='pricing' >
                 {/* <!-- starts --> */}
                 <section class="wrap-bg container-fluid pb-3 position-relative">
                     <img src="./images/bg-top.svg" id="bg-img-top" alt="" />
-                    <h2 class="text-center py-3 pb-4" id='pricetag' >Our Pricing</h2>
+                    <h2 class="text-center pt-4 pb-4" id='pricetag' >Our Pricing</h2>
 
                     <div
-                        class="container py-5 position-relative d-flex justify-content-center"
+                        class="container py-3 position-relative d-flex justify-content-center"
                     >
                         <div class="row justify-content-center">
-                            <div class="col-md-4 mb-5 text-center sm-px-3" id="master">
+                            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-8 mb-5 text-center sm-px-3" id="master">
                                 <p class="text-center" id='gheading' style={{color:'white'}}>BASIC</p>
                                 <div
                                     class="d-flex align-items-center justify-content-center text-dark mb-3"
@@ -32,13 +32,13 @@ function Pricing() {
                                     <p>Accident Information</p>
                                     
                                 </div>
-                                <a href="#" class="btn-block btn btn-cute-1 mt-4" id="goldbtn">Sign Up</a>
+                                <a href="#" class="btn-block btn btn-cute-1 mt-4" id="goldbtn" style={{whiteSpace:'nowrap'}} >Sign Up</a>
 
                                 {/* <a href="#" class="btn-block btn btn-cute mt-4">Learn More</a> */}
                             </div>
 
                             {/* <!-- professional --> */}
-                            <div class="col-md-4 mb-5 text-center" id="prof">
+                            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-8 mb-5 text-center sm-px-3" id="prof">
                                 <p class="text-center text-white " id='gheading' >GOLD</p>
                                 <div class="d-flex align-items-center justify-content-center mb-3">
                                     <span class="text-white"></span>
@@ -61,7 +61,7 @@ function Pricing() {
 
                             {/* <!-- master --> */}
 
-                            <div class="col-md-4 mb-5 text-center" id="master">
+                            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-8 mb-5 text-center sm-px-3" id="master">
                                 <p class="text-center" id='gheading' style={{color:'white'}}>SILVER</p>
                                 <div
                                     class="d-flex align-items-center justify-content-center  mb-3"
@@ -91,13 +91,13 @@ function Pricing() {
 
             <body class="mx-auto">
                 {/* <!-- starts --> */}
-                <section class="wrap-bg container-fluid pb-3 position-relative">
+                <section class="wrap-bg container-fluid  position-relative">
                     
                     <div
-                        class="container py-5 position-relative d-flex justify-content-center"
+                        class="container py-0 position-relative d-flex justify-content-center"
                     >
                         <div class="row justify-content-center">
-                            <div class="col-md-4 mb-5 text-center sm-px-3" id="master">
+                            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-8 mb-5 text-center sm-px-3" id="master">
                                 <p class="text-center" id='gheading' style={{color:'white'}}>PLATINIUM</p>
                                 <div
                                     class="d-flex align-items-center justify-content-center text-dark mb-3"
@@ -122,7 +122,7 @@ function Pricing() {
                             </div>
 
                             {/* <!-- professional --> */}
-                            <div class="col-md-4 mb-5 text-center" id="prof">
+                            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-8 mb-5 text-center sm-px-3" id="prof">
                                 <p class="text-center text-white " id='gheading' >EXECUTIVE</p>
                                 <div class="d-flex align-items-center justify-content-center mb-3">
                                     <span class="text-white"></span>
@@ -145,7 +145,7 @@ function Pricing() {
 
                             {/* <!-- master --> */}
 
-                            <div class="col-md-4 mb-5 text-center" id="master">
+                            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-8 mb-5 text-center sm-px-3" id="master">
                                 <p class="text-center" id='gheading' style={{color:'white'}}>DIAMOND</p>
                                 <div
                                     class="d-flex align-items-center justify-content-center  mb-3"

@@ -1,6 +1,7 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom';
 import Sidebar from './Sidebar';
+import Canvas from './Canvas'
 function Dashboard() {
 
     return (
@@ -14,29 +15,35 @@ function Dashboard() {
                             <NavLink className="nav-link" to='/'><p>Vincheck Central</p></NavLink>
 
                         </div>
+                        <a
+                            class="btn btn-primary mb-2" id="cbtn" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                            <img src="ham.png" alt="" sizes="" srcset="" />
+                        </a >
                     </div>
                     <div className='nborder'></div>
                 </div>
                 <div className="dbody">
-                    {/* This is siebat */}
                     <Sidebar />
                     <div className="reqform">
-                        <h1>
+                        <h1 style={{color:'white'}}>
                             Refund Application
                         </h1>
-                        <div className="col-md-8 mx-auto mainreq">
+                        <div className="col-xxl-8 col-xl-8 col-lg-8 col-md-8 col-sm-9 mx-auto mt-4 mainreq">
 
                             <div className="reqbox"><div class="row mb-4">
-                                <div class="col">
-                                    <div data-mdb-input-init class="form-outline">
-                                        <label class="form-label" for="form3Example1" id='reqlabel'> VIN Number</label>
-                                        <input type="text" id="form3Example1" class="form-control" placeholder='Enter vin number' />
+                                <div className="reqbox2">
+
+                                    <div class="col-md-4">
+                                        <div data-mdb-input-init class="form-outline">
+                                            <label class="form-label" for="form3Example1" id='reqlabel'> VIN Number</label>
+                                            <input type="text" id="form3Example1" class="form-control" placeholder='Vin number' />
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col">
-                                    <div data-mdb-input-init class="form-outline">
-                                        <label class="form-label" for="form3Example2" id='reqlabel'>Transaction ID(optional)</label>
-                                        <input type="text" id="form3Example1" class="form-control" placeholder='Enter transaction id' />
+                                    <div class="col-md-5">
+                                        <div data-mdb-input-init class="form-outline">
+                                            <label class="form-label" for="form3Example2" id='reqlabel'>Transaction ID(optional)</label>
+                                            <input type="text" id="form3Example1" class="form-control" placeholder='Transaction id' />
+                                        </div>
                                     </div>
                                 </div>
                                 <div className="mb-3 pt-3">
@@ -56,6 +63,7 @@ function Dashboard() {
                     </div>
                 </div>
             </div>
+            <Canvas/>
         </>
 
     )

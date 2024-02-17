@@ -1,82 +1,100 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom';
 import Sidebar from './Sidebar'
-
+import Selects from './Selects'
+import Canvas from './Canvas';
 function Dpage1() {
 
+    return (
+        <>
 
-    return (<div className="dashboard">
-        <div className="head">
-            <div className="navhead">
 
-                <div className="title">
 
-                    <NavLink className="nav-link" to='/'><p>Vincheck Central</p></NavLink>
 
-                </div>
-            </div>
-            <div className='nborder'></div>
-        </div>
-        <div className="dbody">
-            {/* This is siebat */}
-            <Sidebar />
-            <div className="col-md-4 dcol2">
-                <div className="dform1">
-                    <p><b>Remaining Count:0</b></p>
-                    {/* <p>VIN Number*</p> */}
-                    <div data-mdb-input-init class="form-outline mb-4">
-                        <label class="form-label" for="form5Example1">VIN Number*</label>
-                        <input type="text" id="form5Example1" class="form-control" placeholder='Enter VIN Number' />
+
+            <div className="dashboard">
+                <div className="head">
+                    <div className="navhead">
+
+
+                        <div className="title mt-1">
+
+
+                            <NavLink className="nav-link" to='/'><p>Vincheck Central</p></NavLink>
+
+
+
+                        </div>
+                        <a
+                            class="btn btn-primary mb-2" id="cbtn" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                            <img src="ham.png" alt="" sizes="" srcset="" />
+                        </a >
                     </div>
-                    <p>You have 0 remaining credits to view report. Select any package below to proceed.</p>
-                    <select class="form-control" name="package" required>
-                        <option value="3" data-amount="32.00">1 Reports for 32.00</option>
-                        <option value="4" data-amount="39.95">2 Reports for 39.95</option>
-                        <option value="5" data-amount="65.95">5 Reports for 65.95</option>
-                        <option value="6" data-amount="103.95">10 Reports for 103.95</option>
-                        <option value="7" data-amount="159.95">25 Reports for 159.95</option>
-                        <option value="8" data-amount="259.95">50 Reports for 259.95</option>
-                    </select>
-
-                    <button class="btn btn-success mt-2" style={{ fontSize: '13px' }}>Check Vehicle Details</button>
-                    {/* <button class="btn btn-success mt-2">Check Vehicle Details</button> */}
+                    <div className='nborder'></div>
                 </div>
-            </div>
-            <div className="col-md-6 dcol3">
-                <div class="card">
-                    <div class="header">
-                        <h2>All Reports</h2>
+                <div className="dbody">
+                    {/* This is siebat */}
+                    <Sidebar />
+                    <div className="col-xxl-4 col-xl-4 col-lg-3 col-md-12 mx-auto dcol2">
+                        <div className="dform1">
+                            <p><b>Remaining Count:0</b></p>
+
+                            <div data-mdb-input-init class="form-outline mb-4">
+                                <label class="form-label" for="form5Example1" id="ft">VIN Number*</label>
+                                <input type="text" id="form5Example1" class="form-control" placeholder='Enter VIN Number' />
+                            </div>
+                            <p id='ftext'>You have 0 remaining credits to view report. Select any package below to proceed.</p>
+                            <Selects />
+
+                            <button class="btn btn-success mt-2" style={{ border: 'none' }}>Check Vehicle Details</button>
+                            <button class="btn btn-success mt-2" style={{  marginLeft: '3px', border: 'none' }}>Payment</button>
+                        </div>
                     </div>
-                    <table class="table">
-                        <thead>
-                            <tr>
-                                <th scope="col">#</th>
-                                <th scope="col">VIN </th>
-                                <th scope="col">Payment Status</th>
-                                <th scope="col">Date & Time</th>
-                                <th scope="col">Action</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td colSpan='1' id='colborder'>1</td>
-                                <td colSpan='1' id='colborder'></td>
-                                <td colSpan='1' id='colborder'>Pending</td>
-                                <td colSpan='1' id='colborder'>2023-12-28 22:33:33</td>
-                                <td colSpan='1' id='lastcol'>View Report
+                    <div className="col-xxl-6 col-xl-6  col-lg-7 col-md-12 dcol3">
+                        <div class="card">
+                            <div class="header">
+                                <h2>All Reports</h2>
+                            </div>
 
-                                    <button class="btn btn-success mt-2" style={{ fontSize: '13px' }}>View Report</button>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                            <div className="tablecontainer">
 
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">#</th>
+                                            <th scope="col">VIN </th>
+                                            <th scope="col">Email </th>
+                                            <th scope="col">Payment Status</th>
+                                            <th scope="col">Date & Time</th>
+                                            <th scope="col">Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+
+                                            <td colSpan='1' id='colborder'>1</td>
+                                            <td colSpan='1' id='colborder' >12345678901234567</td>
+                                            <td colSpan='1' id='colborder' style={{ whiteSpace: 'wrap', wordBreak: 'break-all' }}>Harrisimran55gmail.com</td>
+                                            <td colSpan='1' id='colborder' >Pending</td>
+                                            <td colSpan='1' id='colborder' style={{ whiteSpace: 'wrap', wordBreak: 'break-all' }}>2023-12-28 22:33:33</td>
+                                            <td colSpan='1' id='lastcol'>
+
+                                                <button class="btn btn-success mt-2" style={{ fontSize: '13px' }}>View Report</button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
 
 
+            <Canvas />
+
+        </>
     )
 }
 
